@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # vue_electron
 
 > An electron-vue project
