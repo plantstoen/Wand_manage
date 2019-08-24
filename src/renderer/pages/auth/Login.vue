@@ -69,12 +69,14 @@
       color: gray;
       font-weight: bold;
     }
+    //tap 키로 선택했을떄도 색 변경해주기
   }
 }
 #textlogo{
-  margin-left: 1em;
+  margin-left: 3em;
 }
 #create_msg{
+  font-weight: 700;
   border: none;
   background-color: white;
   color: gray;
