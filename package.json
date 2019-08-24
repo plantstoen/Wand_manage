@@ -1,5 +1,5 @@
 {
-  "name": "vue_electron",
+  "name": "Wand_manage",
   "version": "0.0.1",
   "author": "Sangmin Kim <plantstoen@gmail.com>",
   "description": "An electron-vue project",
@@ -17,7 +17,7 @@
     "postinstall": ""
   },
   "build": {
-    "productName": "vue_electron",
+    "productName": "Wand_manage",
     "appId": "com.example.yourapp",
     "directories": {
       "output": "build"

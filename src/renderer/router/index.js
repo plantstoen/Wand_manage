@@ -7,8 +7,18 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'landing-page',
-      component: require('@/components/LandingPage').default
+      name: 'login_page',
+      component: require('@/pages/auth/Login.vue').default
+    },
+    {
+      path: '/create_account',
+      name: 'create_account',
+      component: require('@/pages/auth/CreateAccount.vue').default
+    },
+    {
+      path: '/select_map',
+      name: 'select_map',
+      component: require('@/pages/auth/SelectMap.vue').default
     },
     {
       path: '*',
