@@ -54,11 +54,12 @@
     margin-top: 0.2em;
     margin-bottom: 0.2em;
     height: 3em;
-    border-radius: 1em;
-    border: 0.1em solid rgb(189, 186, 186);
+    border-radius: 8px;
+    border: 0.1em solid rgb(206, 206, 206);
     outline-style: none;
     padding-left: 1em;
     font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
     
     &:focus{
       transition-property: background-color, color;
@@ -69,6 +70,7 @@
   }
   
   &__button{
+    font-size: 15px;
     transition-property: background-color, color;
     transition-duration: 150ms;
     transition-timing-function: ease-out;
@@ -111,6 +113,7 @@
 }
 
 #forgot {
+  font-size: 15px;
   margin-left: auto;
   font-family: 'Noto Sans KR', sans-serif;
   transition-property: background-color, color;
