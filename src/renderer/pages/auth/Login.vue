@@ -59,7 +59,7 @@
     outline-style: none;
     padding-left: 1em;
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 15px;
+    font-size: 0.8em;
     
     &:focus{
       transition-property: background-color, color;
