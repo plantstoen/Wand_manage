@@ -26,13 +26,15 @@
         <!--img src="@/assets/Wand_textlogo.png" width="200em" id="textlogo"-->
         <input type="text" name="ID" placeholder="id" class="loginbox__inputbox" v-model="id">
         <input type="password" name="ID" placeholder="password" class="loginbox__inputbox" v-model="pw">
-        <button type="button" class="loginbox__button" @click="login_funtion(id, pw)">로그인</button>
+        <button type="button" class="loginbox__button" @click="login_funtion(id, pw)">Login</button>
+        <span id="forgot">forgot the password?</span>
       </div>
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
 .top{
   display: flex;
   flex-direction: row;
@@ -40,11 +42,15 @@
   align-items: center;
   margin-top: 10em;
 }
+
 .loginbox{
   display: flex;
   flex-direction: column;
-  padding-top: 1em;
+  
   &__inputbox {
+    transition-property: background-color, color;
+    transition-duration: 400ms;
+    transition-timing-function: ease-out;
     margin-top: 0.2em;
     margin-bottom: 0.2em;
     height: 3em;
@@ -52,44 +58,72 @@
     border: 0.1em solid rgb(189, 186, 186);
     outline-style: none;
     padding-left: 1em;
+    font-family: 'Noto Sans KR', sans-serif;
+    
     &:focus{
-      border: 0.2em solid rgba(12, 202, 69, 0.295);
-      font-weight: 600;
+      transition-property: background-color, color;
+      transition-duration: 400ms;
+      transition-timing-function: ease-out;
+      border: 0.1em solid #43BB9C;
     }
   }
+  
   &__button{
+    transition-property: background-color, color;
+    transition-duration: 150ms;
+    transition-timing-function: ease-out;
     border: 0.1em solid white;
     border-radius: 1em;
-    font-weight: bold;
-    color: gray;
+    color: rgb(196, 196, 196);
     width: 22em;
     height: 3em;
     outline-style: none;
+    
     &:hover{
-      background-color: rgba(142, 234, 170, 0.575);
-      color: gray;
-      font-weight: bold;
+      color: white;
+      transition-property: background-color, color;
+      transition-duration: 150ms;
+      transition-timing-function: ease-out;
+      background-color: #43BB9C;  
     }
+    
     &:focus{
-      background-color: rgba(142, 234, 170, 0.575);
-      color: gray;
-      font-weight: bold;  
+      background-color: #43BB9C;
+      transition-property: background-color, color;
+      transition-duration: 150ms;
+      transition-timing-function: ease-out;
+      color: white;  
     }
-    //tap 키로 선택했을떄도 색 변경해주기
+
   }
 }
-#textlogo{
-  margin-left: 3em;
-}
+
 #create_msg{
-  font-weight: 700;
   border: none;
   background-color: white;
   color: gray;
+  
   &:hover {
     cursor: pointer;
     color: rgba(29, 216, 85, 0.856);
   }
   margin-left: 1.9em;
+}
+
+#forgot {
+  margin-left: auto;
+  font-family: 'Noto Sans KR', sans-serif;
+  transition-property: background-color, color;
+  transition-duration: 150ms;
+  transition-timing-function: ease-out;
+  color: rgb(196, 196, 196);
+  
+  &:hover{
+    color: #43BB9C;
+    transition-property: background-color, color;
+    transition-duration: 150ms;
+    transition-timing-function: ease-out;
+    cursor: pointer;  
+  }
 }
 </style>
