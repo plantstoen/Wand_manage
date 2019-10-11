@@ -27,7 +27,7 @@
         <input type="text" name="ID" placeholder="id" class="loginbox__inputbox" v-model="id">
         <input type="password" name="ID" placeholder="password" class="loginbox__inputbox" v-model="pw">
         <button type="button" class="loginbox__button" @click="login_funtion(id, pw)">Login</button>
-        <span id="forgot">forgot the password?</span>
+        <span id="forgot" @click="$router.push({name: 'forgot_pass'})">forgot the password?</span>
       </div>
     </div>
   </div>
@@ -45,6 +45,9 @@
 
 .loginbox{
   display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 15em;
   flex-direction: column;
   
   &__inputbox {
@@ -77,7 +80,6 @@
     border: 0.1em solid white;
     border-radius: 1em;
     color: rgb(196, 196, 196);
-    width: 22em;
     height: 3em;
     outline-style: none;
     

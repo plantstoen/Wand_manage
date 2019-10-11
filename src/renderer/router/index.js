@@ -21,6 +21,11 @@ export default new Router({
       component: require('@/pages/auth/SelectMap.vue').default
     },
     {
+      path: '/forgotpass',
+      name: 'forgot_pass',
+      component: require('@/pages/auth/ForgotPass.vue').default
+    },
+    {
       path: '*',
       redirect: '/'
     }
