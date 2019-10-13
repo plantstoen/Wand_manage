@@ -64,6 +64,13 @@
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 0.8em;
     
+    &:hover{
+      transition-property: background-color, color;
+      transition-duration: 150ms;
+      transition-timing-function: ease-out;
+      border: #43BB9C;  
+    }
+    
     &:focus{
       transition-property: background-color, color;
       transition-duration: 400ms;
