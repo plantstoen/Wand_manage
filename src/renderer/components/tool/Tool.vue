@@ -1,17 +1,17 @@
 <template>
 <div class="main">
-  <span>하이</span>
+  <span>테스트</span>
 </div>
 </template>
 
 <script>
 export default {
-  name: 'InMap'
+  name: 'tool'
 }
 </script>
 
-<style lang="scss" scoped>
+<style>
 .main {
-  background-color: gray;
+  background-color: red;
 }
 </style>
