@@ -6,13 +6,13 @@
 
 <script>
 export default {
-  name: 'InMap'
+  name: 'Map'
 }
 </script>
 
 <style lang="scss" scoped>
 .main {
   display: inline-block;
-  background-color: gray;
+  background-color: white;
 }
 </style>

@@ -1,20 +1,28 @@
 <template>
 <div class="main">
-  <span @click="$router.push({name: 'login_page'})">뒤로가기</span><br>
-  <span>대웅경영개발원</span>
+  <maintool></maintool>
 </div>
 </template>
 
 <script>
+import MainTool from './MainTool.vue'
+import SetUp from './SetUp.vue'
+
 export default {
-  name: 'tool'
+  name: 'tool',
+  components: {
+    'maintool': MainTool,
+    'setup': SetUp
+  }
 }
 </script>
 
 <style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
 .main {
+  box-shadow: -2px 0px 5px 0px rgb(165, 165, 165) inset;
   display: inline-block;
   height: 100%;
-  background-color: red;
+  background-color: rgb(223, 223, 223);
 }
 </style>

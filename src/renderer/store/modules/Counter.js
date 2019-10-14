@@ -18,8 +18,15 @@ const actions = {
   }
 }
 
+const getters = {
+  getTest : (state) => {
+    return state.main
+  }
+}
+
 export default {
   state,
   mutations,
-  actions
+  actions,
+  getters
 }

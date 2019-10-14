@@ -91,6 +91,7 @@
     transition-property: background-color, color;
     transition-duration: 150ms;
     transition-timing-function: ease-out;
+    width: 100%;
     border: 0.1em solid white;
     border-radius: 1em;
     color: rgb(196, 196, 196);

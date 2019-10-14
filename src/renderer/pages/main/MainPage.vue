@@ -1,18 +1,18 @@
 <template>
 <div class="main">
-  <tool class="tool"></tool>
-  <inmap class="map"></inmap>
+  <intool class="main__intool"></intool>
+  <inmap class="main__inmap"></inmap>
 </div>
 </template>
 
 <script>
 import Tool from './../../components/tool/Tool.vue'
-import InMap from './../../components/map/InMap.vue'
+import Map from './../../components/map/Map.vue'
 
 export default {
   components: {
-    'tool': Tool,
-    'inmap': InMap
+    'intool': Tool,
+    'inmap': Map
   },
 }
 </script>
@@ -22,17 +22,17 @@ export default {
   height: 100%;
   display: flex;
   flex-direction: row;
-}
 
-.tool {
+  &__intool {
   height: 100%;
   display: inline-block;
   width: 30%;
-}
+  }
 
-.map {
+  &__inmap {
   height: 100%;
   display: inline-block;
   width: 70%;
+ }
 }
 </style>
