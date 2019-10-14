@@ -1,6 +1,6 @@
 <template>
 <div class="main">
-  <span>테스트</span>
+  <span>대웅경영개발원</span>
 </div>
 </template>
 
@@ -10,8 +10,10 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 .main {
+  display: inline-block;
+  height: 100%;
   background-color: red;
 }
 </style>

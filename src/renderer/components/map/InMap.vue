@@ -12,6 +12,7 @@ export default {
 
 <style lang="scss" scoped>
 .main {
+  display: inline-block;
   background-color: gray;
 }
 </style>

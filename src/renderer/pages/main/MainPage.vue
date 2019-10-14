@@ -19,15 +19,20 @@ export default {
 
 <style lang="scss" scoped>
 .main {
+  height: 100%;
   display: flex;
   flex-direction: row;
 }
+
 .tool {
-  display: flex;
+  height: 100%;
+  display: inline-block;
   width: 30%;
 }
+
 .map {
-  display: flex;
+  height: 100%;
+  display: inline-block;
   width: 70%;
 }
 </style>
