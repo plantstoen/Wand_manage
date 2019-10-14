@@ -1,14 +1,18 @@
 <template>
 <div>
   <div>
-    <span>하하</span>
+    <inmap></inmap>
   </div>
 </div>
 </template>
 
 <script>
-export default {
+import InMap from './../../components/map/InMap.vue'
 
+export default {
+  components: {
+    'inmap': InMap
+  },
 }
 </script>
 
