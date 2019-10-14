@@ -6,7 +6,7 @@
         this.$electron.shell.openExternal(link)
       },
       login_funtion(userId,password) {
-        alert(userId, password)
+        alert(userId, password);
       }
     },
     data() {
@@ -26,7 +26,7 @@
         <!--img src="@/assets/Wand_textlogo.png" width="200em" id="textlogo"-->
         <input type="text" name="ID" placeholder="id" class="loginbox__inputbox" v-model="id">
         <input type="password" name="ID" placeholder="password" class="loginbox__inputbox" v-model="pw">
-        <button type="button" class="loginbox__button" @click="login_funtion(id, pw)">Login</button>
+        <button type="button" class="loginbox__button" @click="$router.push({name: 'mainpage'})">Login</button>
         <span id="forgot" @click="$router.push({name: 'forgot_pass'})">forgot the password?</span>
       </div>
     </div>
@@ -42,6 +42,7 @@
   align-items: center;
   margin-top: 10em;
 }
+
 
 .loginbox{
   display: flex;
@@ -66,9 +67,9 @@
     
     &:hover{
       transition-property: background-color, color;
-      transition-duration: 150ms;
+      transition-duration: 400ms;
       transition-timing-function: ease-out;
-      border: #43BB9C;  
+      border: 0.1em solid #43BB9C;  
     }
     
     &:focus{
@@ -87,7 +88,7 @@
     border: 0.1em solid white;
     border-radius: 1em;
     color: rgb(196, 196, 196);
-    height: 3em;
+    height: 2.7em;
     outline-style: none;
     
     &:hover{

@@ -26,6 +26,11 @@ export default new Router({
       component: require('@/pages/auth/ForgotPass.vue').default
     },
     {
+      path: '/mainpage',
+      name: 'mainpage',
+      component: require('@/pages/main/MainPage.vue').default
+    },
+    {
       path: '*',
       redirect: '/'
     }
