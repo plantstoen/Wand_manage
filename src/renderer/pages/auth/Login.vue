@@ -35,12 +35,18 @@
 
 <style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+#app {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .top{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 10em;
 }
 
 

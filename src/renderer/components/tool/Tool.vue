@@ -1,5 +1,6 @@
 <template>
 <div class="main">
+  <span @click="$router.push({name: 'login_page'})">뒤로가기</span><br>
   <span>대웅경영개발원</span>
 </div>
 </template>
