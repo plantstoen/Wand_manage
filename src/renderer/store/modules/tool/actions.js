@@ -1,5 +1,5 @@
 const getProducts = () => {
-  console.log('sucess_action')
+  alert('sucess_action')
 };
 
 export default {
