@@ -9,10 +9,12 @@
     <button class="search__button">검색</button>
   </div>
   <div class="option">
-    <span class="newtap__option">환경설정</span><br>
+    <!--환경설정 관련 이미지-->
+    <span class="option__text">환경설정</span><br>
   </div>
-  <div>
-    <span class="newtap__ad">광고</span>
+  <div class="ad">
+    <!--광고관련 이미지-->
+    <span class="ad__text">광고</span>
   </div>
   <span>음{{test}}</span>
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -81,7 +83,7 @@ export default {
   height: 2em;
 
   &__textinput {
-    background-color: rgb(206, 206, 206);
+    background-color: rgb(240, 240, 240);
     display: flex;
     padding-left: 0.5em;
     width: 100%;
@@ -134,27 +136,56 @@ export default {
 }
 
 //NOTE 
-.newtap {
+.option {
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
   margin-top: 1em;
+  background-color: none;
+  transition-property: background-color, color;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  border: 0;
+  border-radius: 5px;
 
-  &__option {
+  &__text {
+    padding-left: 1em;
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 1em;
     color: gray;
+  }
+  
+  &:hover {
+    transition-property: background-color, color;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    cursor: pointer;
+    background-color: rgb(211, 211, 211);
+  }
+}
 
-    &:hover {
-      cursor: pointer;
-    }
+.ad {
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  background-color: none;
+  transition-property: background-color, color;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  border: 0;
+  border-radius: 5px;
+
+  &__text {
+    padding-left: 1em;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1em;
+    color: gray;
   }
 
-  &__ad {
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 1em;
-    color: gray;
-
-    &:hover {
-      cursor: pointer;
-    }
+  &:hover {
+    transition-property: background-color, color;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    cursor: pointer;
+    background-color: rgb(211, 211, 211);
   }
 }
 
@@ -180,4 +211,5 @@ export default {
     cursor: pointer;
   }
 }
+
 </style>

@@ -4,9 +4,6 @@
     methods: {
       open (link) {
         this.$electron.shell.openExternal(link)
-      },
-      login_funtion(userId,password) {
-        alert(userId, password);
       }
     },
     data() {
@@ -70,6 +67,11 @@
     padding-left: 1em;
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 0.8em;
+
+    ::placeholder {
+      font-family: 'Noto Sans KR', sans-serif;
+      font-size: 0.8em;
+    }
     
     &:hover{
       transition-property: background-color, color;
@@ -94,7 +96,7 @@
     width: 100%;
     border: 0.1em solid white;
     border-radius: 1em;
-    color: rgb(196, 196, 196);
+    color: gray;
     height: 2.7em;
     outline-style: none;
     
@@ -113,7 +115,6 @@
       transition-timing-function: ease-out;
       color: white;  
     }
-
   }
 }
 
@@ -144,6 +145,13 @@
     transition-duration: 150ms;
     transition-timing-function: ease-out;
     cursor: pointer;  
+  }
+
+  &:focus{
+    transition-property: background-color, color;
+    transition-duration: 400ms;
+    transition-timing-function: ease-out;
+    color: #43BB9C;
   }
 }
 </style>
