@@ -4,6 +4,8 @@ import mutations from './mutations';
 
 const state = {
   products: 'hello',
+  isMain: true,
+  isDetail: false
 };
 
 export default {

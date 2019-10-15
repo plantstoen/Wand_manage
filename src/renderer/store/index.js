@@ -5,9 +5,6 @@ import Tool from './modules/tool'
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-  state: {
-    rootdata: 'root'
-  },
   modules: {
     tool: Tool
   },
