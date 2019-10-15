@@ -1,25 +1,36 @@
 <template>
 <div class="area">
-  <span id="hadder">대웅경영개발원</span><br>
-  <span id="address">경기 용인시 처인구 포곡읍 두계로 72</span><br>
+  <div class="header">
+    <span class="header__name">대웅경영개발원</span><br>
+    <span class="header__address">경기 용인시 처인구 포곡읍 두계로 72</span><br>
+  </div>
   <div class="search">
     <input type="text" class="search__textinput" placeholder="찾으시는게 있나요?">
     <button class="search__button">검색</button>
   </div>
-  <span>음{{test}}</span><br>
-  <span @click="$router.push({name: 'login_page'})">뒤로가기</span>
+  <div>
+    <span>환경설정</span><br>
+    <span>광고</span>
+  </div>
+  <span>음{{test}}</span>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <span id="logout" @click="$router.push({name: 'login_page'})">로그아웃</span>
 </div>
 </template>
 
 <!--넣어야되는것
 :건물이름
+:주소
 :검색
-:환경설정
-:투표
-:문의
-:공지
-:광고
-:독스
+:환경설정_새탭열기
+:투표(세로뷰)
+:문의(세로뷰)
+:공지(세로뷰)
+:광고_새탭열기
+:독스(세로뷰)
 -->
 
 <script>
@@ -34,8 +45,28 @@ export default {
 
 <style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+
 .area {
   padding: 1.3em;
+  margin-top: 1em;
+}
+
+.header {
+  margin-top: 0.3em;
+  margin-left: 0.1em;
+
+  &__name {
+    font-size: 1.5em;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 900;
+  }
+  
+  &__address {
+    font-size: 1em;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    color: gray;
+  }
 }
 
 .search {
@@ -46,6 +77,7 @@ export default {
   height: 2em;
 
   &__textinput {
+    background-color: rgb(206, 206, 206);
     display: flex;
     padding-left: 0.5em;
     width: 100%;
@@ -75,7 +107,7 @@ export default {
     font-size: 15px;
     width: 6em;
     color: white;
-    background-color: gray;
+    background-color: rgb(167, 167, 167);
     border: 0;
     border-radius: 0px 5px 5px 0px / 0px 5px 5px 0px;
     outline-style: none;
@@ -96,18 +128,26 @@ export default {
   }
 }
 
-#hadder {
-  font-size: 1.5em;
+#logout {
+  transition-property: background-color, color;
+  transition-duration: 150ms;
+  transition-timing-function: ease-out;
   font-family: 'Noto Sans KR', sans-serif;
-  font-weight: 900;
-  margin-left: 0.1em;
-}
-
-#address {
   font-size: 1em;
-  font-family: 'Noto Sans KR', sans-serif;
-  font-weight: 400;
-  margin-left: 0.1em;
+  font-weight: 500;
   color: gray;
+  margin-left: 0.1em;
+  
+  &:hover {
+    transition-property: background-color, color;
+    transition-duration: 150ms;
+    transition-timing-function: ease-out;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    color: #43BB9C;
+    cursor: pointer;
+    
+  }
 }
 </style>
