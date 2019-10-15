@@ -3,7 +3,7 @@ import axios from 'axios'
 
 import App from './App'
 import router from './router'
-import store from './store'
+import store from './store/index'
 
 import vueGoogleMapWrapper from './plugins/vue-google-map-wrapper'
 
