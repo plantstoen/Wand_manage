@@ -8,9 +8,11 @@
     <input type="text" class="search__textinput" placeholder="찾으시는게 있나요?">
     <button class="search__button">검색</button>
   </div>
+  <div class="option">
+    <span class="newtap__option">환경설정</span><br>
+  </div>
   <div>
-    <span>환경설정</span><br>
-    <span>광고</span>
+    <span class="newtap__ad">광고</span>
   </div>
   <span>음{{test}}</span>
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -51,6 +53,7 @@ export default {
   margin-top: 1em;
 }
 
+//NOTE   
 .header {
   margin-top: 0.3em;
   margin-left: 0.1em;
@@ -69,6 +72,7 @@ export default {
   }
 }
 
+//NOTE 
 .search {
   display: flex;
   flex-direction: row;
@@ -105,6 +109,7 @@ export default {
     align-items: center;
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 15px;
+    font-weight: 100;
     width: 6em;
     color: white;
     background-color: rgb(167, 167, 167);
@@ -128,6 +133,32 @@ export default {
   }
 }
 
+//NOTE 
+.newtap {
+  margin-top: 1em;
+
+  &__option {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1em;
+    color: gray;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__ad {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1em;
+    color: gray;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+//NOTE 
 #logout {
   transition-property: background-color, color;
   transition-duration: 150ms;
@@ -147,7 +178,6 @@ export default {
     font-weight: 500;
     color: #43BB9C;
     cursor: pointer;
-    
   }
 }
 </style>
