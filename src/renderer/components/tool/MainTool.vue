@@ -11,7 +11,7 @@ import store from 'vuex'
 import { mapGetters } from 'vuex'
 export default {
   computed: {
-    ...mapGetters({test:'b/products'})
+    ...mapGetters({test:'tool/products'})
   }
 }
 </script>
