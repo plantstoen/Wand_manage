@@ -1,8 +1,8 @@
 <!--넣어야되는것
-:건물이름
-:주소
-:검색
-:환경설정_새탭열기
+:건물이름 O
+:주소 O
+:검색 O
+:환경설정_새탭열기 O
 :투표(세로뷰)
 :문의(세로뷰)
 :공지(세로뷰)
@@ -129,6 +129,7 @@ export default {
       transition-duration: 150ms;
       transition-timing-function: ease-out;
       background-color: #43BB9C;
+      cursor: pointer;
     }
 
     &:focus {
@@ -166,6 +167,14 @@ export default {
     cursor: pointer;
     background-color: rgb(211, 211, 211);
   }
+
+  &:focus {
+    transition-property: background-color, color;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    background-color: rgb(211, 211, 211);
+  }
+  
 }
 
 .ad {
@@ -190,6 +199,13 @@ export default {
     transition-duration: 200ms;
     transition-timing-function: ease-out;
     cursor: pointer;
+    background-color: rgb(211, 211, 211);
+  }
+  
+  &:focus {
+    transition-property: background-color, color;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
     background-color: rgb(211, 211, 211);
   }
 }

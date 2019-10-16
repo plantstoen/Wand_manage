@@ -57,8 +57,8 @@
   
   //SECTION 
   &__inputbox {
-    transition-property: background-color, color;
-    transition-duration: 400ms;
+    transition-property: background-color, color, border;
+    transition-duration: 200ms;
     transition-timing-function: ease-out;
     margin-top: 0.2em;
     margin-bottom: 0.2em;
@@ -76,15 +76,15 @@
     }
     
     &:hover{
-      transition-property: background-color, color;
-      transition-duration: 400ms;
+      transition-property: background-color, color, border;
+      transition-duration: 200ms;
       transition-timing-function: ease-out;
       border: 0.1em solid #43BB9C;  
     }
     
     &:focus{
       transition-property: background-color, color;
-      transition-duration: 400ms;
+      transition-duration: 200ms;
       transition-timing-function: ease-out;
       border: 0.1em solid #43BB9C;
     }
@@ -99,7 +99,7 @@
     width: 100%;
     border: 0.1em solid white;
     border-radius: 1em;
-    color: gray;
+    color: rgb(179, 178, 178);
     height: 2.7em;
     outline-style: none;
     
@@ -108,7 +108,8 @@
       transition-property: background-color, color;
       transition-duration: 150ms;
       transition-timing-function: ease-out;
-      background-color: #43BB9C;  
+      background-color: #43BB9C; 
+      cursor: pointer; 
     }
     
     &:focus{
