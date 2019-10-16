@@ -1,3 +1,15 @@
+<!--넣어야되는것
+:건물이름
+:주소
+:검색
+:환경설정_새탭열기
+:투표(세로뷰)
+:문의(세로뷰)
+:공지(세로뷰)
+:광고_새탭열기
+:독스(세로뷰)
+-->
+
 <template>
 <div class="area">
   <div class="header">
@@ -8,7 +20,7 @@
     <input type="text" class="search__textinput" placeholder="찾으시는게 있나요?">
     <button class="search__button">검색</button>
   </div>
-  <div class="option">
+  <div class="option" @click="openOption()">
     <!--환경설정 관련 이미지-->
     <span class="option__text">환경설정</span><br>
   </div>
@@ -25,24 +37,17 @@
 </div>
 </template>
 
-<!--넣어야되는것
-:건물이름
-:주소
-:검색
-:환경설정_새탭열기
-:투표(세로뷰)
-:문의(세로뷰)
-:공지(세로뷰)
-:광고_새탭열기
-:독스(세로뷰)
--->
-
 <script>
 import store from 'vuex'
 import { mapGetters } from 'vuex'
 export default {
   computed: {
     ...mapGetters({test:'tool/isMain'})
+  },
+  methods: {
+    openOption: () => {
+      alert('hi')
+    }
   }
 }
 </script>

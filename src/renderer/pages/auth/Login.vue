@@ -39,6 +39,7 @@
   justify-content: center;
 }
 
+//NOTE 
 .top{
   display: flex;
   flex-direction: row;
@@ -46,7 +47,7 @@
   align-items: center;
 }
 
-
+//NOTE 
 .loginbox{
   display: flex;
   justify-content: center;
@@ -54,6 +55,7 @@
   width: 15em;
   flex-direction: column;
   
+  //SECTION 
   &__inputbox {
     transition-property: background-color, color;
     transition-duration: 400ms;
@@ -88,6 +90,7 @@
     }
   }
   
+  //SECTION 
   &__button{
     font-size: 15px;
     transition-property: background-color, color;
@@ -118,6 +121,7 @@
   }
 }
 
+//NOTE 
 #create_msg{
   border: none;
   background-color: white;
@@ -130,6 +134,7 @@
   margin-left: 1.9em;
 }
 
+//NOTE 
 #forgot {
   font-size: 15px;
   margin-left: auto;
