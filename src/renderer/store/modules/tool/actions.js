@@ -5,10 +5,15 @@ const getProducts = () => {
 };
 
 // Option페이지 열때 작동시키는 액션
-const openOption = () => {
+const openOption = (context) => {
+  context.commit('CHANGE_PAGE_OPTION')
   router.push({name: 'option'})
-  commit(CHANGE_OPTION)  
 };
+
+const openMaintool = (context) => {
+  context.commit('CHANGE_PAGE_MAINTOOL')
+  router.push({name: 'mainpage'})
+}
 
 export default {
   getProducts,

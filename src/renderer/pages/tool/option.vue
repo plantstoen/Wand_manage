@@ -1,3 +1,9 @@
+<!--
+건물이름수정
+건물주소수정
+
+
+-->
 <template>
   <div class="area">
     <span @click="$router.push({name: 'mainpage'})">뒤로가기</span>
@@ -5,8 +11,12 @@
 </template>
 
 <script>
+import store from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 export default {
-
+  methods : {
+    ...mapActions({openMaintool: 'tool/openMaintool'})
+  }
 }
 </script>
 

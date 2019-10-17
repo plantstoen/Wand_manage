@@ -2,6 +2,7 @@
 <div class="main">
   <maintool v-if="this.isMain === true"></maintool>
   <span v-else-if="this.isDetail === true">하핫</span>
+  <span v-else>실패</span>
 </div>
 </template>
 
