@@ -3,10 +3,9 @@ import getters from './getters';
 import mutations from './mutations';
 
 const state = {
-  products: 'hello',
   isMain: true,
   isDetail: false, //구역별 디테일화면
-  isSetting: false, //세팅화면
+  isOption: false, //세팅화면
   isAd: false, //광고화면
 };
 

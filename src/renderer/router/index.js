@@ -21,6 +21,11 @@ export default new Router({
       component: require('@/pages/main/MainPage.vue').default
     },
     {
+      path: '/option',
+      name: 'option',
+      component: require('@/pages/tool/option.vue').default
+    },
+    {
       path: '*',
       redirect: '/'
     }

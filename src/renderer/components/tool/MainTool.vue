@@ -39,15 +39,13 @@
 
 <script>
 import store from 'vuex'
-import { mapGetters } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 export default {
   computed: {
     ...mapGetters({test:'tool/isMain'})
   },
   methods: {
-    openOption: () => {
-      alert('hi')
-    }
+    ...mapActions({openOption: 'tool/openOption'})
   }
 }
 </script>

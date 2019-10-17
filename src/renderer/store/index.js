@@ -10,5 +10,5 @@ export default new Vuex.Store({
     tool: Tool,
     auth: Auth
   },
-  strict: true
+  //strict: true
 });
