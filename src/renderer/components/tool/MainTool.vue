@@ -3,9 +3,9 @@
 :주소 O
 :검색 O
 :환경설정_새탭열기 O
-:투표(세로뷰)
 :문의(세로뷰)
 :공지(세로뷰)
+:투표(세로뷰)
 :광고_새탭열기
 :독스(세로뷰)
 -->
@@ -28,6 +28,13 @@
     <!--광고관련 이미지-->
     <span class="ad__text">광고</span>
   </div>
+  <div class="feedback">
+    <span class="feedback__title">최근 들어온 문의</span>
+    <hr class="feedback__line">
+    <ul>
+      <li v-for="item in items">{{ item.text }}</li>
+    </ul>
+  </div>
   <span>음{{test}}</span>
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -40,12 +47,20 @@
 <script>
 import store from 'vuex'
 import { mapGetters, mapActions } from 'vuex'
+
 export default {
   computed: {
     ...mapGetters({test:'tool/isMain'})
   },
   methods: {
     ...mapActions({openOption: 'tool/openOption'})
+  },
+  data () {
+    items: [
+      { text: '첫번째 문의입니다'},
+      { text: '이건 두번쨰 문의구요'},
+      { text: '당연히 이건 세번째겠죠?'}
+    ]
   }
 }
 </script>

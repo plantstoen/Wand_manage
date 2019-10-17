@@ -10,12 +10,13 @@ const openOption = (context) => {
   router.push({name: 'option'})
 };
 
-const openMaintool = (context) => {
-  context.commit('CHANGE_PAGE_MAINTOOL')
+const openMain = (context) => {
+  context.commit('CHANGE_PAGE_MAIN')
   router.push({name: 'mainpage'})
 }
 
 export default {
   getProducts,
-  openOption
+  openOption,
+  openMain
 };

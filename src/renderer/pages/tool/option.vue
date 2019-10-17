@@ -6,7 +6,7 @@
 -->
 <template>
   <div class="area">
-    <span @click="$router.push({name: 'mainpage'})">뒤로가기</span>
+    <span @click="openMain()">뒤로가기</span>
   </div>
 </template>
 
@@ -15,7 +15,7 @@ import store from 'vuex'
 import { mapGetters, mapActions } from 'vuex'
 export default {
   methods : {
-    ...mapActions({openMaintool: 'tool/openMaintool'})
+    ...mapActions({openMain: 'tool/openMain'})
   }
 }
 </script>

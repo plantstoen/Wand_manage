@@ -8,7 +8,6 @@
 
 <script>
 import MainTool from './MainTool.vue'
-import SetUp from './SetUp.vue'
 
 import store from 'vuex'
 import { mapGetters } from 'vuex'
@@ -16,8 +15,7 @@ import { mapGetters } from 'vuex'
 export default {
   name: 'tool',
   components: {
-    'maintool': MainTool,
-    'setup': SetUp
+    'maintool': MainTool
   },
   computed: {
     ...mapGetters({
